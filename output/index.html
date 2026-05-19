@@ -1,0 +1,2183 @@
+
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>RiskRadar</title>
+
+<style>
+
+body {
+
+    margin:0;
+    padding:0;
+
+    background:#f4f4f4;
+
+    font-family:Arial;
+}
+
+header {
+
+    background:#1f2937;
+
+    color:white;
+
+    padding:25px;
+}
+
+header h1 {
+
+    margin:0;
+}
+
+header p {
+
+    margin-top:8px;
+
+    color:#d1d5db;
+}
+
+.container {
+
+    padding:20px;
+}
+
+#busca {
+
+    width:100%;
+
+    padding:14px;
+
+    border-radius:8px;
+
+    border:1px solid #ccc;
+
+    margin-bottom:25px;
+
+    font-size:16px;
+}
+
+.grid {
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(auto-fit,minmax(320px,1fr));
+
+    gap:20px;
+}
+
+.card {
+
+    background:white;
+
+    border-radius:12px;
+
+    padding:20px;
+
+    box-shadow:
+        0 2px 8px rgba(0,0,0,0.08);
+
+    transition:0.2s;
+}
+
+.card:hover {
+
+    transform:translateY(-3px);
+}
+
+.topo {
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+}
+
+.topo h2 {
+
+    margin:0;
+}
+
+.badge {
+
+    color:white;
+
+    padding:6px 12px;
+
+    border-radius:20px;
+
+    font-size:13px;
+
+    font-weight:bold;
+}
+
+.conteudo {
+
+    margin-top:18px;
+
+    line-height:1.7;
+}
+
+.botao {
+
+    display:block;
+
+    margin-top:20px;
+
+    text-align:center;
+
+    background:#2563eb;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:12px;
+
+    border-radius:8px;
+
+    font-weight:bold;
+}
+
+.botao:hover {
+
+    background:#1d4ed8;
+}
+
+footer {
+
+    text-align:center;
+
+    padding:30px;
+
+    color:#666;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>RiskRadar</h1>
+
+    <p>
+        Plataforma Analítica Espacial
+        de Criticidade Rodoviária
+    </p>
+
+</header>
+
+<div class="container">
+
+    <input
+        type="text"
+        id="busca"
+        placeholder="Pesquisar BR..."
+        onkeyup="filtrarCards()"
+    >
+
+    <div
+        class="grid"
+        id="grid"
+    >
+
+        
+
+        <div class="card">
+
+            <div class="topo">
+
+                <h2>BR-010</h2>
+
+                <span
+                    class="badge"
+                    style="background:#b30000;"
+                >
+                    Crítico
+                </span>
+
+            </div>
+
+            <div class="conteudo">
+
+                <p>
+                    <b>Hotspots:</b>
+                    42
+                </p>
+
+                <p>
+                    <b>Acidentes:</b>
+                    1526
+                </p>
+
+                <p>
+                    <b>Mortos:</b>
+                    412
+                </p>
+
+            </div>
+
+            <a
+                href="hotspots/BR-010_hotspots.html"
+                target="_blank"
+                class="botao"
+            >
+                Abrir mapa
+            </a>
+
+        </div>
+        
+
+        <div class="card">
+
+            <div class="topo">
+
+                <h2>BR-020</h2>
+
+                <span
+                    class="badge"
+                    style="background:#b30000;"
+                >
+                    Crítico
+                </span>
+
+            </div>
+
+            <div class="conteudo">
+
+                <p>
+                    <b>Hotspots:</b>
+                    49
+                </p>
+
+                <p>
+                    <b>Acidentes:</b>
+                    932
+                </p>
+
+                <p>
+                    <b>Mortos:</b>
+                    166
+                </p>
+
+            </div>
+
+            <a
+                href="hotspots/BR-020_hotspots.html"
+                target="_blank"
+                class="botao"
+            >
+                Abrir mapa
+            </a>
+
+        </div>
+        
+
+        <div class="card">
+
+            <div class="topo">
+
+                <h2>BR-030</h2>
+
+                <span
+                    class="badge"
+                    style="background:#b30000;"
+                >
+                    Crítico
+                </span>
+
+            </div>
+
+            <div class="conteudo">
+
+                <p>
+                    <b>Hotspots:</b>
+                    6
+                </p>
+
+                <p>
+                    <b>Acidentes:</b>
+                    57
+                </p>
+
+                <p>
+                    <b>Mortos:</b>
+                    41
+                </p>
+
+            </div>
+
+            <a
+                href="hotspots/BR-030_hotspots.html"
+                target="_blank"
+                class="botao"
+            >
+                Abrir mapa
+            </a>
+
+        </div>
+        
+
+        <div class="card">
+
+            <div class="topo">
+
+                <h2>BR-101</h2>
+
+                <span
+                    class="badge"
+                    style="background:#b30000;"
+                >
+                    Crítico
+                </span>
+
+            </div>
+
+            <div class="conteudo">
+
+                <p>
+                    <b>Hotspots:</b>
+                    987
+                </p>
+
+                <p>
+                    <b>Acidentes:</b>
+                    31661
+                </p>
+
+                <p>
+                    <b>Mortos:</b>
+                    6149
+                </p>
+
+            </div>
+
+            <a
+                href="hotspots/BR-101_hotspots.html"
+                target="_blank"
+                class="botao"
+            >
+                Abrir mapa
+            </a>
+
+        </div>
+        
+
+        <div class="card">
+
+            <div class="topo">
+
+                <h2>BR-104</h2>
+
+                <span
+                    class="badge"
+                    style="background:#b30000;"
+                >
+                    Crítico
+                </span>
+
+            </div>
+
+            <div class="conteudo">
+
+                <p>
+                    <b>Hotspots:</b>
+                    161
+                </p>
+
+                <p>
+                    <b>Acidentes:</b>
+                    3138
+                </p>
+
+                <p>
+                    <b>Mortos:</b>
+                    769
+                </p>
+
+            </div>
+
+            <a
+                href="hotspots/BR-104_hotspots.html"
+                target="_blank"
+                class="botao"
+            >
+                Abrir mapa
+            </a>
+
+        </div>
+        
+
+        <div class="card">
+
+            <div class="topo">
+
+                <h2>BR-110</h2>
+
+                <span
+                    class="badge"
+                    style="background:#b30000;"
+                >
+                    Crítico
+                </span>
+
+            </div>
+
+            <div class="conteudo">
+
+                <p>
+                    <b>Hotspots:</b>
+                    54
+                </p>
+
+                <p>
+                    <b>Acidentes:</b>
+                    1201
+                </p>
+
+                <p>
+                    <b>Mortos:</b>
+                    257
+                </p>
+
+            </div>
+
+            <a
+                href="hotspots/BR-110_hotspots.html"
+                target="_blank"
+                class="botao"
+            >
+                Abrir mapa
+            </a>
+
+        </div>
+        
+
+        <div class="card">
+
+            <div class="topo">
+
+                <h2>BR-116</h2>
+
+                <span
+                    class="badge"
+                    style="background:#b30000;"
+                >
+                    Crítico
+                </span>
+
+            </div>
+
+            <div class="conteudo">
+
+                <p>
+                    <b>Hotspots:</b>
+                    373
+                </p>
+
+                <p>
+                    <b>Acidentes:</b>
+                    12928
+                </p>
+
+                <p>
+                    <b>Mortos:</b>
+                    2395
+                </p>
+
+            </div>
+
+            <a
+                href="hotspots/BR-116_hotspots.html"
+                target="_blank"
+                class="botao"
+            >
+                Abrir mapa
+            </a>
+
+        </div>
+        
+
+        <div class="card">
+
+            <div class="topo">
+
+                <h2>BR-122</h2>
+
+                <span
+                    class="badge"
+                    style="background:#fc8d59;"
+                >
+                    Recorrente
+                </span>
+
+            </div>
+
+            <div class="conteudo">
+
+                <p>
+                    <b>Hotspots:</b>
+                    3
+                </p>
+
+                <p>
+                    <b>Acidentes:</b>
+                    52
+                </p>
+
+                <p>
+                    <b>Mortos:</b>
+                    0
+                </p>
+
+            </div>
+
+            <a
+                href="hotspots/BR-122_hotspots.html"
+                target="_blank"
+                class="botao"
+            >
+                Abrir mapa
+            </a>
+
+        </div>
+        
+
+        <div class="card">
+
+            <div class="topo">
+
+                <h2>BR-135</h2>
+
+                <span
+                    class="badge"
+                    style="background:#b30000;"
+                >
+                    Crítico
+                </span>
+
+            </div>
+
+            <div class="conteudo">
+
+                <p>
+                    <b>Hotspots:</b>
+                    129
+                </p>
+
+                <p>
+                    <b>Acidentes:</b>
+                    3213
+                </p>
+
+                <p>
+                    <b>Mortos:</b>
+                    1123
+                </p>
+
+            </div>
+
+            <a
+                href="hotspots/BR-135_hotspots.html"
+                target="_blank"
+                class="botao"
+            >
+                Abrir mapa
+            </a>
+
+        </div>
+        
+
+        <div class="card">
+
+            <div class="topo">
+
+                <h2>BR-222</h2>
+
+                <span
+                    class="badge"
+                    style="background:#b30000;"
+                >
+                    Crítico
+                </span>
+
+            </div>
+
+            <div class="conteudo">
+
+                <p>
+                    <b>Hotspots:</b>
+                    109
+                </p>
+
+                <p>
+                    <b>Acidentes:</b>
+                    1379
+                </p>
+
+                <p>
+                    <b>Mortos:</b>
+                    542
+                </p>
+
+            </div>
+
+            <a
+                href="hotspots/BR-222_hotspots.html"
+                target="_blank"
+                class="botao"
+            >
+                Abrir mapa
+            </a>
+
+        </div>
+        
+
+        <div class="card">
+
+            <div class="topo">
+
+                <h2>BR-226</h2>
+
+                <span
+                    class="badge"
+                    style="background:#b30000;"
+                >
+                    Crítico
+                </span>
+
+            </div>
+
+            <div class="conteudo">
+
+                <p>
+                    <b>Hotspots:</b>
+                    59
+                </p>
+
+                <p>
+                    <b>Acidentes:</b>
+                    748
+                </p>
+
+                <p>
+                    <b>Mortos:</b>
+                    162
+                </p>
+
+            </div>
+
+            <a
+                href="hotspots/BR-226_hotspots.html"
+                target="_blank"
+                class="botao"
+            >
+                Abrir mapa
+            </a>
+
+        </div>
+        
+
+        <div class="card">
+
+            <div class="topo">
+
+                <h2>BR-230</h2>
+
+                <span
+                    class="badge"
+                    style="background:#b30000;"
+                >
+                    Crítico
+                </span>
+
+            </div>
+
+            <div class="conteudo">
+
+                <p>
+                    <b>Hotspots:</b>
+                    247
+                </p>
+
+                <p>
+                    <b>Acidentes:</b>
+                    5952
+                </p>
+
+                <p>
+                    <b>Mortos:</b>
+                    1671
+                </p>
+
+            </div>
+
+            <a
+                href="hotspots/BR-230_hotspots.html"
+                target="_blank"
+                class="botao"
+            >
+                Abrir mapa
+            </a>
+
+        </div>
+        
+
+        <div class="card">
+
+            <div class="topo">
+
+                <h2>BR-232</h2>
+
+                <span
+                    class="badge"
+                    style="background:#b30000;"
+                >
+                    Crítico
+                </span>
+
+            </div>
+
+            <div class="conteudo">
+
+                <p>
+                    <b>Hotspots:</b>
+                    269
+                </p>
+
+                <p>
+                    <b>Acidentes:</b>
+                    6352
+                </p>
+
+                <p>
+                    <b>Mortos:</b>
+                    2302
+                </p>
+
+            </div>
+
+            <a
+                href="hotspots/BR-232_hotspots.html"
+                target="_blank"
+                class="botao"
+            >
+                Abrir mapa
+            </a>
+
+        </div>
+        
+
+        <div class="card">
+
+            <div class="topo">
+
+                <h2>BR-235</h2>
+
+                <span
+                    class="badge"
+                    style="background:#b30000;"
+                >
+                    Crítico
+                </span>
+
+            </div>
+
+            <div class="conteudo">
+
+                <p>
+                    <b>Hotspots:</b>
+                    75
+                </p>
+
+                <p>
+                    <b>Acidentes:</b>
+                    2016
+                </p>
+
+                <p>
+                    <b>Mortos:</b>
+                    396
+                </p>
+
+            </div>
+
+            <a
+                href="hotspots/BR-235_hotspots.html"
+                target="_blank"
+                class="botao"
+            >
+                Abrir mapa
+            </a>
+
+        </div>
+        
+
+        <div class="card">
+
+            <div class="topo">
+
+                <h2>BR-242</h2>
+
+                <span
+                    class="badge"
+                    style="background:#b30000;"
+                >
+                    Crítico
+                </span>
+
+            </div>
+
+            <div class="conteudo">
+
+                <p>
+                    <b>Hotspots:</b>
+                    49
+                </p>
+
+                <p>
+                    <b>Acidentes:</b>
+                    406
+                </p>
+
+                <p>
+                    <b>Mortos:</b>
+                    380
+                </p>
+
+            </div>
+
+            <a
+                href="hotspots/BR-242_hotspots.html"
+                target="_blank"
+                class="botao"
+            >
+                Abrir mapa
+            </a>
+
+        </div>
+        
+
+        <div class="card">
+
+            <div class="topo">
+
+                <h2>BR-304</h2>
+
+                <span
+                    class="badge"
+                    style="background:#b30000;"
+                >
+                    Crítico
+                </span>
+
+            </div>
+
+            <div class="conteudo">
+
+                <p>
+                    <b>Hotspots:</b>
+                    95
+                </p>
+
+                <p>
+                    <b>Acidentes:</b>
+                    2388
+                </p>
+
+                <p>
+                    <b>Mortos:</b>
+                    290
+                </p>
+
+            </div>
+
+            <a
+                href="hotspots/BR-304_hotspots.html"
+                target="_blank"
+                class="botao"
+            >
+                Abrir mapa
+            </a>
+
+        </div>
+        
+
+        <div class="card">
+
+            <div class="topo">
+
+                <h2>BR-316</h2>
+
+                <span
+                    class="badge"
+                    style="background:#b30000;"
+                >
+                    Crítico
+                </span>
+
+            </div>
+
+            <div class="conteudo">
+
+                <p>
+                    <b>Hotspots:</b>
+                    121
+                </p>
+
+                <p>
+                    <b>Acidentes:</b>
+                    1788
+                </p>
+
+                <p>
+                    <b>Mortos:</b>
+                    575
+                </p>
+
+            </div>
+
+            <a
+                href="hotspots/BR-316_hotspots.html"
+                target="_blank"
+                class="botao"
+            >
+                Abrir mapa
+            </a>
+
+        </div>
+        
+
+        <div class="card">
+
+            <div class="topo">
+
+                <h2>BR-324</h2>
+
+                <span
+                    class="badge"
+                    style="background:#b30000;"
+                >
+                    Crítico
+                </span>
+
+            </div>
+
+            <div class="conteudo">
+
+                <p>
+                    <b>Hotspots:</b>
+                    167
+                </p>
+
+                <p>
+                    <b>Acidentes:</b>
+                    6927
+                </p>
+
+                <p>
+                    <b>Mortos:</b>
+                    995
+                </p>
+
+            </div>
+
+            <a
+                href="hotspots/BR-324_hotspots.html"
+                target="_blank"
+                class="botao"
+            >
+                Abrir mapa
+            </a>
+
+        </div>
+        
+
+        <div class="card">
+
+            <div class="topo">
+
+                <h2>BR-343</h2>
+
+                <span
+                    class="badge"
+                    style="background:#b30000;"
+                >
+                    Crítico
+                </span>
+
+            </div>
+
+            <div class="conteudo">
+
+                <p>
+                    <b>Hotspots:</b>
+                    136
+                </p>
+
+                <p>
+                    <b>Acidentes:</b>
+                    4083
+                </p>
+
+                <p>
+                    <b>Mortos:</b>
+                    1943
+                </p>
+
+            </div>
+
+            <a
+                href="hotspots/BR-343_hotspots.html"
+                target="_blank"
+                class="botao"
+            >
+                Abrir mapa
+            </a>
+
+        </div>
+        
+
+        <div class="card">
+
+            <div class="topo">
+
+                <h2>BR-349</h2>
+
+                <span
+                    class="badge"
+                    style="background:#b30000;"
+                >
+                    Crítico
+                </span>
+
+            </div>
+
+            <div class="conteudo">
+
+                <p>
+                    <b>Hotspots:</b>
+                    3
+                </p>
+
+                <p>
+                    <b>Acidentes:</b>
+                    20
+                </p>
+
+                <p>
+                    <b>Mortos:</b>
+                    39
+                </p>
+
+            </div>
+
+            <a
+                href="hotspots/BR-349_hotspots.html"
+                target="_blank"
+                class="botao"
+            >
+                Abrir mapa
+            </a>
+
+        </div>
+        
+
+        <div class="card">
+
+            <div class="topo">
+
+                <h2>BR-361</h2>
+
+                <span
+                    class="badge"
+                    style="background:#b30000;"
+                >
+                    Crítico
+                </span>
+
+            </div>
+
+            <div class="conteudo">
+
+                <p>
+                    <b>Hotspots:</b>
+                    4
+                </p>
+
+                <p>
+                    <b>Acidentes:</b>
+                    48
+                </p>
+
+                <p>
+                    <b>Mortos:</b>
+                    45
+                </p>
+
+            </div>
+
+            <a
+                href="hotspots/BR-361_hotspots.html"
+                target="_blank"
+                class="botao"
+            >
+                Abrir mapa
+            </a>
+
+        </div>
+        
+
+        <div class="card">
+
+            <div class="topo">
+
+                <h2>BR-363</h2>
+
+                <span
+                    class="badge"
+                    style="background:#31a354;"
+                >
+                    Moderado
+                </span>
+
+            </div>
+
+            <div class="conteudo">
+
+                <p>
+                    <b>Hotspots:</b>
+                    0
+                </p>
+
+                <p>
+                    <b>Acidentes:</b>
+                    0
+                </p>
+
+                <p>
+                    <b>Mortos:</b>
+                    0
+                </p>
+
+            </div>
+
+            <a
+                href="hotspots/BR-363_hotspots.html"
+                target="_blank"
+                class="botao"
+            >
+                Abrir mapa
+            </a>
+
+        </div>
+        
+
+        <div class="card">
+
+            <div class="topo">
+
+                <h2>BR-367</h2>
+
+                <span
+                    class="badge"
+                    style="background:#b30000;"
+                >
+                    Crítico
+                </span>
+
+            </div>
+
+            <div class="conteudo">
+
+                <p>
+                    <b>Hotspots:</b>
+                    35
+                </p>
+
+                <p>
+                    <b>Acidentes:</b>
+                    974
+                </p>
+
+                <p>
+                    <b>Mortos:</b>
+                    118
+                </p>
+
+            </div>
+
+            <a
+                href="hotspots/BR-367_hotspots.html"
+                target="_blank"
+                class="botao"
+            >
+                Abrir mapa
+            </a>
+
+        </div>
+        
+
+        <div class="card">
+
+            <div class="topo">
+
+                <h2>BR-402</h2>
+
+                <span
+                    class="badge"
+                    style="background:#b30000;"
+                >
+                    Crítico
+                </span>
+
+            </div>
+
+            <div class="conteudo">
+
+                <p>
+                    <b>Hotspots:</b>
+                    5
+                </p>
+
+                <p>
+                    <b>Acidentes:</b>
+                    31
+                </p>
+
+                <p>
+                    <b>Mortos:</b>
+                    15
+                </p>
+
+            </div>
+
+            <a
+                href="hotspots/BR-402_hotspots.html"
+                target="_blank"
+                class="botao"
+            >
+                Abrir mapa
+            </a>
+
+        </div>
+        
+
+        <div class="card">
+
+            <div class="topo">
+
+                <h2>BR-403</h2>
+
+                <span
+                    class="badge"
+                    style="background:#31a354;"
+                >
+                    Moderado
+                </span>
+
+            </div>
+
+            <div class="conteudo">
+
+                <p>
+                    <b>Hotspots:</b>
+                    0
+                </p>
+
+                <p>
+                    <b>Acidentes:</b>
+                    0
+                </p>
+
+                <p>
+                    <b>Mortos:</b>
+                    0
+                </p>
+
+            </div>
+
+            <a
+                href="hotspots/BR-403_hotspots.html"
+                target="_blank"
+                class="botao"
+            >
+                Abrir mapa
+            </a>
+
+        </div>
+        
+
+        <div class="card">
+
+            <div class="topo">
+
+                <h2>BR-405</h2>
+
+                <span
+                    class="badge"
+                    style="background:#b30000;"
+                >
+                    Crítico
+                </span>
+
+            </div>
+
+            <div class="conteudo">
+
+                <p>
+                    <b>Hotspots:</b>
+                    25
+                </p>
+
+                <p>
+                    <b>Acidentes:</b>
+                    387
+                </p>
+
+                <p>
+                    <b>Mortos:</b>
+                    79
+                </p>
+
+            </div>
+
+            <a
+                href="hotspots/BR-405_hotspots.html"
+                target="_blank"
+                class="botao"
+            >
+                Abrir mapa
+            </a>
+
+        </div>
+        
+
+        <div class="card">
+
+            <div class="topo">
+
+                <h2>BR-406</h2>
+
+                <span
+                    class="badge"
+                    style="background:#b30000;"
+                >
+                    Crítico
+                </span>
+
+            </div>
+
+            <div class="conteudo">
+
+                <p>
+                    <b>Hotspots:</b>
+                    34
+                </p>
+
+                <p>
+                    <b>Acidentes:</b>
+                    945
+                </p>
+
+                <p>
+                    <b>Mortos:</b>
+                    134
+                </p>
+
+            </div>
+
+            <a
+                href="hotspots/BR-406_hotspots.html"
+                target="_blank"
+                class="botao"
+            >
+                Abrir mapa
+            </a>
+
+        </div>
+        
+
+        <div class="card">
+
+            <div class="topo">
+
+                <h2>BR-407</h2>
+
+                <span
+                    class="badge"
+                    style="background:#b30000;"
+                >
+                    Crítico
+                </span>
+
+            </div>
+
+            <div class="conteudo">
+
+                <p>
+                    <b>Hotspots:</b>
+                    52
+                </p>
+
+                <p>
+                    <b>Acidentes:</b>
+                    1451
+                </p>
+
+                <p>
+                    <b>Mortos:</b>
+                    209
+                </p>
+
+            </div>
+
+            <a
+                href="hotspots/BR-407_hotspots.html"
+                target="_blank"
+                class="botao"
+            >
+                Abrir mapa
+            </a>
+
+        </div>
+        
+
+        <div class="card">
+
+            <div class="topo">
+
+                <h2>BR-408</h2>
+
+                <span
+                    class="badge"
+                    style="background:#b30000;"
+                >
+                    Crítico
+                </span>
+
+            </div>
+
+            <div class="conteudo">
+
+                <p>
+                    <b>Hotspots:</b>
+                    69
+                </p>
+
+                <p>
+                    <b>Acidentes:</b>
+                    1150
+                </p>
+
+                <p>
+                    <b>Mortos:</b>
+                    453
+                </p>
+
+            </div>
+
+            <a
+                href="hotspots/BR-408_hotspots.html"
+                target="_blank"
+                class="botao"
+            >
+                Abrir mapa
+            </a>
+
+        </div>
+        
+
+        <div class="card">
+
+            <div class="topo">
+
+                <h2>BR-412</h2>
+
+                <span
+                    class="badge"
+                    style="background:#b30000;"
+                >
+                    Crítico
+                </span>
+
+            </div>
+
+            <div class="conteudo">
+
+                <p>
+                    <b>Hotspots:</b>
+                    4
+                </p>
+
+                <p>
+                    <b>Acidentes:</b>
+                    37
+                </p>
+
+                <p>
+                    <b>Mortos:</b>
+                    22
+                </p>
+
+            </div>
+
+            <a
+                href="hotspots/BR-412_hotspots.html"
+                target="_blank"
+                class="botao"
+            >
+                Abrir mapa
+            </a>
+
+        </div>
+        
+
+        <div class="card">
+
+            <div class="topo">
+
+                <h2>BR-415</h2>
+
+                <span
+                    class="badge"
+                    style="background:#e34a33;"
+                >
+                    Severo
+                </span>
+
+            </div>
+
+            <div class="conteudo">
+
+                <p>
+                    <b>Hotspots:</b>
+                    14
+                </p>
+
+                <p>
+                    <b>Acidentes:</b>
+                    170
+                </p>
+
+                <p>
+                    <b>Mortos:</b>
+                    9
+                </p>
+
+            </div>
+
+            <a
+                href="hotspots/BR-415_hotspots.html"
+                target="_blank"
+                class="botao"
+            >
+                Abrir mapa
+            </a>
+
+        </div>
+        
+
+        <div class="card">
+
+            <div class="topo">
+
+                <h2>BR-416</h2>
+
+                <span
+                    class="badge"
+                    style="background:#31a354;"
+                >
+                    Moderado
+                </span>
+
+            </div>
+
+            <div class="conteudo">
+
+                <p>
+                    <b>Hotspots:</b>
+                    1
+                </p>
+
+                <p>
+                    <b>Acidentes:</b>
+                    6
+                </p>
+
+                <p>
+                    <b>Mortos:</b>
+                    0
+                </p>
+
+            </div>
+
+            <a
+                href="hotspots/BR-416_hotspots.html"
+                target="_blank"
+                class="botao"
+            >
+                Abrir mapa
+            </a>
+
+        </div>
+        
+
+        <div class="card">
+
+            <div class="topo">
+
+                <h2>BR-418</h2>
+
+                <span
+                    class="badge"
+                    style="background:#b30000;"
+                >
+                    Crítico
+                </span>
+
+            </div>
+
+            <div class="conteudo">
+
+                <p>
+                    <b>Hotspots:</b>
+                    8
+                </p>
+
+                <p>
+                    <b>Acidentes:</b>
+                    105
+                </p>
+
+                <p>
+                    <b>Mortos:</b>
+                    17
+                </p>
+
+            </div>
+
+            <a
+                href="hotspots/BR-418_hotspots.html"
+                target="_blank"
+                class="botao"
+            >
+                Abrir mapa
+            </a>
+
+        </div>
+        
+
+        <div class="card">
+
+            <div class="topo">
+
+                <h2>BR-420</h2>
+
+                <span
+                    class="badge"
+                    style="background:#b30000;"
+                >
+                    Crítico
+                </span>
+
+            </div>
+
+            <div class="conteudo">
+
+                <p>
+                    <b>Hotspots:</b>
+                    6
+                </p>
+
+                <p>
+                    <b>Acidentes:</b>
+                    61
+                </p>
+
+                <p>
+                    <b>Mortos:</b>
+                    22
+                </p>
+
+            </div>
+
+            <a
+                href="hotspots/BR-420_hotspots.html"
+                target="_blank"
+                class="botao"
+            >
+                Abrir mapa
+            </a>
+
+        </div>
+        
+
+        <div class="card">
+
+            <div class="topo">
+
+                <h2>BR-423</h2>
+
+                <span
+                    class="badge"
+                    style="background:#b30000;"
+                >
+                    Crítico
+                </span>
+
+            </div>
+
+            <div class="conteudo">
+
+                <p>
+                    <b>Hotspots:</b>
+                    57
+                </p>
+
+                <p>
+                    <b>Acidentes:</b>
+                    547
+                </p>
+
+                <p>
+                    <b>Mortos:</b>
+                    383
+                </p>
+
+            </div>
+
+            <a
+                href="hotspots/BR-423_hotspots.html"
+                target="_blank"
+                class="botao"
+            >
+                Abrir mapa
+            </a>
+
+        </div>
+        
+
+        <div class="card">
+
+            <div class="topo">
+
+                <h2>BR-424</h2>
+
+                <span
+                    class="badge"
+                    style="background:#b30000;"
+                >
+                    Crítico
+                </span>
+
+            </div>
+
+            <div class="conteudo">
+
+                <p>
+                    <b>Hotspots:</b>
+                    39
+                </p>
+
+                <p>
+                    <b>Acidentes:</b>
+                    461
+                </p>
+
+                <p>
+                    <b>Mortos:</b>
+                    264
+                </p>
+
+            </div>
+
+            <a
+                href="hotspots/BR-424_hotspots.html"
+                target="_blank"
+                class="botao"
+            >
+                Abrir mapa
+            </a>
+
+        </div>
+        
+
+        <div class="card">
+
+            <div class="topo">
+
+                <h2>BR-426</h2>
+
+                <span
+                    class="badge"
+                    style="background:#31a354;"
+                >
+                    Moderado
+                </span>
+
+            </div>
+
+            <div class="conteudo">
+
+                <p>
+                    <b>Hotspots:</b>
+                    0
+                </p>
+
+                <p>
+                    <b>Acidentes:</b>
+                    0
+                </p>
+
+                <p>
+                    <b>Mortos:</b>
+                    0
+                </p>
+
+            </div>
+
+            <a
+                href="hotspots/BR-426_hotspots.html"
+                target="_blank"
+                class="botao"
+            >
+                Abrir mapa
+            </a>
+
+        </div>
+        
+
+        <div class="card">
+
+            <div class="topo">
+
+                <h2>BR-427</h2>
+
+                <span
+                    class="badge"
+                    style="background:#b30000;"
+                >
+                    Crítico
+                </span>
+
+            </div>
+
+            <div class="conteudo">
+
+                <p>
+                    <b>Hotspots:</b>
+                    10
+                </p>
+
+                <p>
+                    <b>Acidentes:</b>
+                    87
+                </p>
+
+                <p>
+                    <b>Mortos:</b>
+                    11
+                </p>
+
+            </div>
+
+            <a
+                href="hotspots/BR-427_hotspots.html"
+                target="_blank"
+                class="botao"
+            >
+                Abrir mapa
+            </a>
+
+        </div>
+        
+
+        <div class="card">
+
+            <div class="topo">
+
+                <h2>BR-428</h2>
+
+                <span
+                    class="badge"
+                    style="background:#b30000;"
+                >
+                    Crítico
+                </span>
+
+            </div>
+
+            <div class="conteudo">
+
+                <p>
+                    <b>Hotspots:</b>
+                    23
+                </p>
+
+                <p>
+                    <b>Acidentes:</b>
+                    1251
+                </p>
+
+                <p>
+                    <b>Mortos:</b>
+                    49
+                </p>
+
+            </div>
+
+            <a
+                href="hotspots/BR-428_hotspots.html"
+                target="_blank"
+                class="botao"
+            >
+                Abrir mapa
+            </a>
+
+        </div>
+        
+
+        <div class="card">
+
+            <div class="topo">
+
+                <h2>BR-430</h2>
+
+                <span
+                    class="badge"
+                    style="background:#31a354;"
+                >
+                    Moderado
+                </span>
+
+            </div>
+
+            <div class="conteudo">
+
+                <p>
+                    <b>Hotspots:</b>
+                    0
+                </p>
+
+                <p>
+                    <b>Acidentes:</b>
+                    0
+                </p>
+
+                <p>
+                    <b>Mortos:</b>
+                    0
+                </p>
+
+            </div>
+
+            <a
+                href="hotspots/BR-430_hotspots.html"
+                target="_blank"
+                class="botao"
+            >
+                Abrir mapa
+            </a>
+
+        </div>
+        
+
+        <div class="card">
+
+            <div class="topo">
+
+                <h2>BR-434</h2>
+
+                <span
+                    class="badge"
+                    style="background:#31a354;"
+                >
+                    Moderado
+                </span>
+
+            </div>
+
+            <div class="conteudo">
+
+                <p>
+                    <b>Hotspots:</b>
+                    0
+                </p>
+
+                <p>
+                    <b>Acidentes:</b>
+                    0
+                </p>
+
+                <p>
+                    <b>Mortos:</b>
+                    0
+                </p>
+
+            </div>
+
+            <a
+                href="hotspots/BR-434_hotspots.html"
+                target="_blank"
+                class="botao"
+            >
+                Abrir mapa
+            </a>
+
+        </div>
+        
+
+        <div class="card">
+
+            <div class="topo">
+
+                <h2>BR-437</h2>
+
+                <span
+                    class="badge"
+                    style="background:#31a354;"
+                >
+                    Moderado
+                </span>
+
+            </div>
+
+            <div class="conteudo">
+
+                <p>
+                    <b>Hotspots:</b>
+                    0
+                </p>
+
+                <p>
+                    <b>Acidentes:</b>
+                    0
+                </p>
+
+                <p>
+                    <b>Mortos:</b>
+                    0
+                </p>
+
+            </div>
+
+            <a
+                href="hotspots/BR-437_hotspots.html"
+                target="_blank"
+                class="botao"
+            >
+                Abrir mapa
+            </a>
+
+        </div>
+        
+
+        <div class="card">
+
+            <div class="topo">
+
+                <h2>BR-498</h2>
+
+                <span
+                    class="badge"
+                    style="background:#31a354;"
+                >
+                    Moderado
+                </span>
+
+            </div>
+
+            <div class="conteudo">
+
+                <p>
+                    <b>Hotspots:</b>
+                    0
+                </p>
+
+                <p>
+                    <b>Acidentes:</b>
+                    0
+                </p>
+
+                <p>
+                    <b>Mortos:</b>
+                    0
+                </p>
+
+            </div>
+
+            <a
+                href="hotspots/BR-498_hotspots.html"
+                target="_blank"
+                class="botao"
+            >
+                Abrir mapa
+            </a>
+
+        </div>
+        
+
+    </div>
+
+</div>
+
+<footer>
+
+    RiskRadar · Projeto de Pesquisa
+    em Análise Espacial Rodoviária
+
+</footer>
+
+<script>
+
+function filtrarCards() {
+
+    let input = document
+        .getElementById("busca");
+
+    let filtro = input.value
+        .toUpperCase();
+
+    let cards = document
+        .getElementsByClassName("card");
+
+    for (let i = 0;
+        i < cards.length;
+        i++) {
+
+        let titulo = cards[i]
+            .getElementsByTagName("h2")[0];
+
+        let texto = titulo
+            .innerText;
+
+        if (
+            texto.toUpperCase()
+            .indexOf(filtro) > -1
+        ) {
+
+            cards[i].style.display = "";
+
+        } else {
+
+            cards[i].style.display = "none";
+        }
+    }
+}
+
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,346 @@
+[
+    {
+        "br": "BR-010",
+        "mapa": "hotspots/BR-010_hotspots.html",
+        "hotspots": 42,
+        "acidentes": 1526,
+        "mortos": 412,
+        "criticidade": "Crítico"
+    },
+    {
+        "br": "BR-020",
+        "mapa": "hotspots/BR-020_hotspots.html",
+        "hotspots": 49,
+        "acidentes": 932,
+        "mortos": 166,
+        "criticidade": "Crítico"
+    },
+    {
+        "br": "BR-030",
+        "mapa": "hotspots/BR-030_hotspots.html",
+        "hotspots": 6,
+        "acidentes": 57,
+        "mortos": 41,
+        "criticidade": "Crítico"
+    },
+    {
+        "br": "BR-101",
+        "mapa": "hotspots/BR-101_hotspots.html",
+        "hotspots": 987,
+        "acidentes": 31661,
+        "mortos": 6149,
+        "criticidade": "Crítico"
+    },
+    {
+        "br": "BR-104",
+        "mapa": "hotspots/BR-104_hotspots.html",
+        "hotspots": 161,
+        "acidentes": 3138,
+        "mortos": 769,
+        "criticidade": "Crítico"
+    },
+    {
+        "br": "BR-110",
+        "mapa": "hotspots/BR-110_hotspots.html",
+        "hotspots": 54,
+        "acidentes": 1201,
+        "mortos": 257,
+        "criticidade": "Crítico"
+    },
+    {
+        "br": "BR-116",
+        "mapa": "hotspots/BR-116_hotspots.html",
+        "hotspots": 373,
+        "acidentes": 12928,
+        "mortos": 2395,
+        "criticidade": "Crítico"
+    },
+    {
+        "br": "BR-122",
+        "mapa": "hotspots/BR-122_hotspots.html",
+        "hotspots": 3,
+        "acidentes": 52,
+        "mortos": 0,
+        "criticidade": "Recorrente"
+    },
+    {
+        "br": "BR-135",
+        "mapa": "hotspots/BR-135_hotspots.html",
+        "hotspots": 129,
+        "acidentes": 3213,
+        "mortos": 1123,
+        "criticidade": "Crítico"
+    },
+    {
+        "br": "BR-222",
+        "mapa": "hotspots/BR-222_hotspots.html",
+        "hotspots": 109,
+        "acidentes": 1379,
+        "mortos": 542,
+        "criticidade": "Crítico"
+    },
+    {
+        "br": "BR-226",
+        "mapa": "hotspots/BR-226_hotspots.html",
+        "hotspots": 59,
+        "acidentes": 748,
+        "mortos": 162,
+        "criticidade": "Crítico"
+    },
+    {
+        "br": "BR-230",
+        "mapa": "hotspots/BR-230_hotspots.html",
+        "hotspots": 247,
+        "acidentes": 5952,
+        "mortos": 1671,
+        "criticidade": "Crítico"
+    },
+    {
+        "br": "BR-232",
+        "mapa": "hotspots/BR-232_hotspots.html",
+        "hotspots": 269,
+        "acidentes": 6352,
+        "mortos": 2302,
+        "criticidade": "Crítico"
+    },
+    {
+        "br": "BR-235",
+        "mapa": "hotspots/BR-235_hotspots.html",
+        "hotspots": 75,
+        "acidentes": 2016,
+        "mortos": 396,
+        "criticidade": "Crítico"
+    },
+    {
+        "br": "BR-242",
+        "mapa": "hotspots/BR-242_hotspots.html",
+        "hotspots": 49,
+        "acidentes": 406,
+        "mortos": 380,
+        "criticidade": "Crítico"
+    },
+    {
+        "br": "BR-304",
+        "mapa": "hotspots/BR-304_hotspots.html",
+        "hotspots": 95,
+        "acidentes": 2388,
+        "mortos": 290,
+        "criticidade": "Crítico"
+    },
+    {
+        "br": "BR-316",
+        "mapa": "hotspots/BR-316_hotspots.html",
+        "hotspots": 121,
+        "acidentes": 1788,
+        "mortos": 575,
+        "criticidade": "Crítico"
+    },
+    {
+        "br": "BR-324",
+        "mapa": "hotspots/BR-324_hotspots.html",
+        "hotspots": 167,
+        "acidentes": 6927,
+        "mortos": 995,
+        "criticidade": "Crítico"
+    },
+    {
+        "br": "BR-343",
+        "mapa": "hotspots/BR-343_hotspots.html",
+        "hotspots": 136,
+        "acidentes": 4083,
+        "mortos": 1943,
+        "criticidade": "Crítico"
+    },
+    {
+        "br": "BR-349",
+        "mapa": "hotspots/BR-349_hotspots.html",
+        "hotspots": 3,
+        "acidentes": 20,
+        "mortos": 39,
+        "criticidade": "Crítico"
+    },
+    {
+        "br": "BR-361",
+        "mapa": "hotspots/BR-361_hotspots.html",
+        "hotspots": 4,
+        "acidentes": 48,
+        "mortos": 45,
+        "criticidade": "Crítico"
+    },
+    {
+        "br": "BR-363",
+        "mapa": "hotspots/BR-363_hotspots.html",
+        "hotspots": 0,
+        "acidentes": 0,
+        "mortos": 0,
+        "criticidade": "Moderado"
+    },
+    {
+        "br": "BR-367",
+        "mapa": "hotspots/BR-367_hotspots.html",
+        "hotspots": 35,
+        "acidentes": 974,
+        "mortos": 118,
+        "criticidade": "Crítico"
+    },
+    {
+        "br": "BR-402",
+        "mapa": "hotspots/BR-402_hotspots.html",
+        "hotspots": 5,
+        "acidentes": 31,
+        "mortos": 15,
+        "criticidade": "Crítico"
+    },
+    {
+        "br": "BR-403",
+        "mapa": "hotspots/BR-403_hotspots.html",
+        "hotspots": 0,
+        "acidentes": 0,
+        "mortos": 0,
+        "criticidade": "Moderado"
+    },
+    {
+        "br": "BR-405",
+        "mapa": "hotspots/BR-405_hotspots.html",
+        "hotspots": 25,
+        "acidentes": 387,
+        "mortos": 79,
+        "criticidade": "Crítico"
+    },
+    {
+        "br": "BR-406",
+        "mapa": "hotspots/BR-406_hotspots.html",
+        "hotspots": 34,
+        "acidentes": 945,
+        "mortos": 134,
+        "criticidade": "Crítico"
+    },
+    {
+        "br": "BR-407",
+        "mapa": "hotspots/BR-407_hotspots.html",
+        "hotspots": 52,
+        "acidentes": 1451,
+        "mortos": 209,
+        "criticidade": "Crítico"
+    },
+    {
+        "br": "BR-408",
+        "mapa": "hotspots/BR-408_hotspots.html",
+        "hotspots": 69,
+        "acidentes": 1150,
+        "mortos": 453,
+        "criticidade": "Crítico"
+    },
+    {
+        "br": "BR-412",
+        "mapa": "hotspots/BR-412_hotspots.html",
+        "hotspots": 4,
+        "acidentes": 37,
+        "mortos": 22,
+        "criticidade": "Crítico"
+    },
+    {
+        "br": "BR-415",
+        "mapa": "hotspots/BR-415_hotspots.html",
+        "hotspots": 14,
+        "acidentes": 170,
+        "mortos": 9,
+        "criticidade": "Severo"
+    },
+    {
+        "br": "BR-416",
+        "mapa": "hotspots/BR-416_hotspots.html",
+        "hotspots": 1,
+        "acidentes": 6,
+        "mortos": 0,
+        "criticidade": "Moderado"
+    },
+    {
+        "br": "BR-418",
+        "mapa": "hotspots/BR-418_hotspots.html",
+        "hotspots": 8,
+        "acidentes": 105,
+        "mortos": 17,
+        "criticidade": "Crítico"
+    },
+    {
+        "br": "BR-420",
+        "mapa": "hotspots/BR-420_hotspots.html",
+        "hotspots": 6,
+        "acidentes": 61,
+        "mortos": 22,
+        "criticidade": "Crítico"
+    },
+    {
+        "br": "BR-423",
+        "mapa": "hotspots/BR-423_hotspots.html",
+        "hotspots": 57,
+        "acidentes": 547,
+        "mortos": 383,
+        "criticidade": "Crítico"
+    },
+    {
+        "br": "BR-424",
+        "mapa": "hotspots/BR-424_hotspots.html",
+        "hotspots": 39,
+        "acidentes": 461,
+        "mortos": 264,
+        "criticidade": "Crítico"
+    },
+    {
+        "br": "BR-426",
+        "mapa": "hotspots/BR-426_hotspots.html",
+        "hotspots": 0,
+        "acidentes": 0,
+        "mortos": 0,
+        "criticidade": "Moderado"
+    },
+    {
+        "br": "BR-427",
+        "mapa": "hotspots/BR-427_hotspots.html",
+        "hotspots": 10,
+        "acidentes": 87,
+        "mortos": 11,
+        "criticidade": "Crítico"
+    },
+    {
+        "br": "BR-428",
+        "mapa": "hotspots/BR-428_hotspots.html",
+        "hotspots": 23,
+        "acidentes": 1251,
+        "mortos": 49,
+        "criticidade": "Crítico"
+    },
+    {
+        "br": "BR-430",
+        "mapa": "hotspots/BR-430_hotspots.html",
+        "hotspots": 0,
+        "acidentes": 0,
+        "mortos": 0,
+        "criticidade": "Moderado"
+    },
+    {
+        "br": "BR-434",
+        "mapa": "hotspots/BR-434_hotspots.html",
+        "hotspots": 0,
+        "acidentes": 0,
+        "mortos": 0,
+        "criticidade": "Moderado"
+    },
+    {
+        "br": "BR-437",
+        "mapa": "hotspots/BR-437_hotspots.html",
+        "hotspots": 0,
+        "acidentes": 0,
+        "mortos": 0,
+        "criticidade": "Moderado"
+    },
+    {
+        "br": "BR-498",
+        "mapa": "hotspots/BR-498_hotspots.html",
+        "hotspots": 0,
+        "acidentes": 0,
+        "mortos": 0,
+        "criticidade": "Moderado"
+    }
+]
