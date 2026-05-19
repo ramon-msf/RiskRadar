@@ -1,0 +1,8 @@
+geopandas
+pandas
+numpy
+shapely
+folium
+scikit-learn
+pyogrio
+fiona
