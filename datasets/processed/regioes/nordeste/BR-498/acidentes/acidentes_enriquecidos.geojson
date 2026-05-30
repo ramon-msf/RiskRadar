@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "acidentes_enriquecidos",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "id": 550685.0, "data_inversa": "2023-09-24T00:00:00", "dia_semana": "domingo", "uf": "BA", "br": 498.0, "km": "11,1", "municipio": "itamaraju", "latitude": -16.91418, "longitude": -39.49423, "feridos_leves": 0.0, "feridos_graves": 12.0, "mortos": 0.0, "classificacao_acidente": "Com Vítimas Feridas", "causa_principal": "Sim", "causa_acidente": "Reação tardia ou ineficiente do condutor", "tipo_acidente": "Queda de ocupante de veículo", "fase_dia": "Pleno dia", "condicao_metereologica": "Céu Claro", "tipo_pista": "Simples", "tracado_via": "Reta", "uso_solo": "Não", "sentido_via": "Decrescente", "traffic_signal_near": 0, "crossing_near": 0, "speed_camera_near": 0, "traffic_calming_near": 0 }, "geometry": { "type": "Point", "coordinates": [ -39.49423, -16.91418 ] } }
+]
+}
